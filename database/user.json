@@ -1,0 +1,20 @@
+{
+    "name": "Kevin",
+    "profession": "Software Enhineer",
+    "age": 28,
+    "residence": "S.Korea",
+    "address": "S.Korea, Daegu",
+    "languages": ["Uzbek", "Korean", "Russian", "English"],
+    "skills": ["HTML", "CSS", "JS", "NodeJs", "JavaScript"],
+    "extra_skills": ["Bootstrap, Materialize", "Styling, Sass", "Django, Flask", "GIT Knowledge"],
+    "work_place": "IT company",
+    "service_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus commodo lobortis. Nulla suscipit dui ut dignissim efficitur. Quisque non massa congue, dignissim lacus ac, pellentesque dolor. Sed malesuada dolor sit amet interdum malesuada. Sed eget lacus in nulla maximus dictum. In ut iaculis lorem. Integer luctus diam quis mi congue posuere. Donec sed ante sit amet dui interdum feugiat. Etiam lobortis lacus vitae risus cursus, in tristique velit elementum. Vestibulum semper urna risus, ut sollicitudin nisl pretium at. Proin bibendum leo at condimentum laoreet. Proin eu velit commodo, molestie neque sit amet, interdum libero. Pellentesque quis malesuada sem, ut gravida libero. Donec venenatis nunc ut mauris ultrices, sit amet porta risus lobortis.",
+    "about_me": "Proin tristique tortor eget justo efficitur maximus. Cras vestibulum lobortis lobortis. Quisque elit est, viverra ac varius vel, viverra a odio. Nullam vel tristique mi. Donec ex orci, lobortis nec ultricies ultrices, finibus non augue. Maecenas ullamcorper velit vitae mauris vestibulum blandit. Aenean pulvinar enim quis felis porttitor sollicitudin quis eu neque. Curabitur facilisis ex ac dolor pharetra fringilla. Morbi non ligula arcu. Suspendisse potenti. Nullam accumsan ultrices tellus varius tempus. Phasellus vulputate neque cursus justo hendrerit, vitae fringilla dolor congue. Duis justo tortor, tincidunt at commodo ac, aliquet in lorem.",
+    "city": "Denau",
+    "title": ["Flower", "Seedlings", "Gardner", "Old", "New"],
+    "flower_desc": ["What is a Flower?", "What is a Seedling?","Who is Gardner?"],
+    "flower_name": ["Tulip", "gaffodil", "Poppy", "Sunflower", "Bluebell", "Rose", "Snowdrop", "Cherry", "blossom"],
+    "flower_price": ["15$", "25$", "12$", "20$", "35$", "30$", "22$", "19$", "9$"],
+    "famous_words": ["World is Beautiful with Flowers"],
+    "famous_name": ["'Steve Jobs"]
+}
