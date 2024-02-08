@@ -1,10 +1,10 @@
 {
     "name": "Kevin",
-    "profession": "Software Enhineer",
+    "profession": "Software Engineer",
     "age": 28,
     "residence": "S.Korea",
     "address": "S.Korea, Daegu",
-    "languages": ["Uzbek", "Korean", "Russian", "English"],
+    "languages": ["Uzbek", "Korean", "English"],
     "skills": ["HTML", "CSS", "JS", "NodeJs", "JavaScript"],
     "extra_skills": ["Bootstrap, Materialize", "Styling, Sass", "Django, Flask", "GIT Knowledge"],
     "work_place": "IT company",
