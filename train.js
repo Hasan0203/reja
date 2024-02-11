@@ -1,5 +1,5 @@
 console.log("train area");
-// A-TASK
+// // A-TASK
 // function countLetter(letter, word) {
 //     let count = 0;
 //     for (let i = 0; i < word.length; i++) {
@@ -34,13 +34,13 @@ const list = [
 
 //     setTimeout(function () {
 //         callback(null, list[5]);
-//      }, 5000);
-//     }
-//     setInterval(function () {
-//         callback(null, list[5]);
-//      }, 5000);
-//     }
-// }
+//     }, 5000);
+    
+//     // setInterval(function () {
+//     //     callback(null, list[5]);
+//     //  }, 5000);
+    
+//   }
 // }
 
 // console.log("passed here 0");
@@ -53,33 +53,34 @@ const list = [
 
 
 //ASYNC functions 
-// async function maslahatBering(a) {
-//     if (typeof a !== "number") throw new Error("insert a number"); 
-//     else if (a <= 20) return list[0]; 
-//     else if (a > 20 && a <= 30) return list[1];
-//     else if (a > 30 && a <= 40) return list[2];
-//     else if (a > 40 && a <= 50) return list[3]; 
-//     else if (a > 50 && a <= 60) return list[4];
-//     else {
+async function maslahatBering(a) {
+    if (typeof a !== "number") throw new Error("insert a number"); 
+    else if (a <= 20) return list[0]; 
+    else if (a > 20 && a <= 30) return list[1];
+    else if (a > 30 && a <= 40) return list[2];
+    else if (a > 40 && a <= 50) return list[3]; 
+    else if (a > 50 && a <= 60) return list[4];
+    else {
+        // return list[5];
         
-//         // return new Promise((resolve, reject) => {
-//         //     setTimeout(() => {                            
-//         //         resolve(list[5]);
-//         //     }, 5000); 
-//         // });
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {                            
+                resolve(list[5]);
+            }, 5000); 
+        }); 
 
-//         return new Promise((resolve, reject) => {                        //keyin tushuntiriladi.     
-//             setInterval(() => {
-//                 resolve(list[5]);
-//             }, 5000); 
-//         });
+        // return new Promise((resolve, reject) => {                        //keyin tushuntiriladi.     
+        //     setInterval(() => {
+        //         resolve(list[5]);
+        //     }, 5000); 
+        // });
        
-//     }
-// }
+    }
+}
 
 
     
-// call visa then/catch 
+// call via then/catch 
 // console.log("passed here 0");
 // maslahatBering(25)
 //     .then((data) => {
@@ -92,15 +93,20 @@ const list = [
 
 
 // call via async/ await
-// async function run() {
-//     let javob = await maslahatBering(25);
-//     console.log(javob);
-//     javob = await maslahatBering(65);
-//     console.log(javob);
-//     javob = await maslahatBering(41);
-//     console.log(javob);
-// }
-// run();
+
+async function run() {
+    let javob = await maslahatBering(25);
+    console.log(javob);
+   
+    javob = await maslahatBering(65);
+    console.log(javob);
+    javob = await maslahatBering(41);
+    console.log(javob);
+    
+}
+
+run();
+console.log("hi");
 
 // async function run() {
 //     let javob = await maslahatBering(65);          
