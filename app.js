@@ -32,8 +32,32 @@ app.set("view engine", "ejs");
 
 // 4: Rooting code
 app.post("/create-item", (req, res) => {
+    console.log('User entered /create-item');
     console.log(req.body);
-    res.json({test: "success"});
+    const new_reja = req.body.reja;
+    db.collection("plans").insertOne({reja: new_reja}, (err, data) => {
+        if(err) {
+            console.log(err);
+            req.end("Something went wrong");
+        } else {
+            res.end("Successfully added");
+        }
+    });
+});
+
+app.get("/", function (req, res) {
+    console.log('User entered /');
+    db.collection("plans") 
+        .find()
+        .toArray((err, data) => {
+            if(err) {
+                console.log(err);
+                req.end("Something went wrong");
+            } else {
+                
+                res.render("reja", {items: data});
+            }
+        });
 });
 
 app.get('/author', function(req, res) {
