@@ -21,6 +21,6 @@ mongodb.connect(connectionString, {
                 `The server is running successfully on port: ${PORT}, http://localhost:${PORT}`
             );
         });
-    }
+    } 
 });
 
