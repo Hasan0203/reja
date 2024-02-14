@@ -1,5 +1,56 @@
 // console.log("train area");
 
+// TASK-C
+class Shop {
+        constructor(non, lagmon, cola) {
+          this.non = non;
+          this.lagmon = lagmon;
+          this.cola = cola;
+        }
+      
+        qoldiq() {
+          const now = new Date().toLocaleTimeString();
+          console.log(`Hozir ${now}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud!`);
+        } 
+
+        sotish(product, minus) {
+                if (product === 'non') {
+                    this.non -= minus;
+                } else if (product === 'lagmon') {
+                    this.lagmon -= minus;
+                } else if (product === 'cola') {
+                    this.cola -= minus;
+                } else {
+                        console.log("Sotiladigan Mahsulot tanlanmadi!");
+                }
+                const now = new Date().toLocaleTimeString();
+                console.log(`Hozir ${now}da ${minus}ta ${product} sotildi!`);
+            }
+      
+        qabul(product, add) {
+                if (product === 'non') {
+                    this.non += add;
+                } else if (product === 'lagmon') {
+                    this.lagmon += add;
+                } else if (product === 'cola') {
+                    this.cola += add;
+                } else {
+                        console.log("Qabul qilinadigan Mahsulot tanlanmadi!");
+                }
+                const now = new Date().toLocaleTimeString();
+                console.log(`Hozir ${now}da ${add}ta ${product} qabul qilindi!`);
+            }
+        }
+            
+      
+      const shop = new Shop(4, 5, 2);
+      shop.qoldiq(); 
+      shop.sotish('non', 4); 
+      shop.qabul('cola', 4); 
+      shop.qoldiq(); 
+      
+      
+
 //TASK -B
 
 // function findNum(a) {

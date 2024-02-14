@@ -42,3 +42,24 @@ document
             console.log("Iltimos qaytadan harakat qiling!");
         }); 
 });
+
+document.addEventListener("click", function(e) {
+    // delete operations
+    console.log(e.target);
+    if(e.target.classList.contains("delete-me")) {
+        if(confirm("Aniq o'chirmoqchimisiz?")) {
+            axios.post("/delete-item", {id: e.target.getAttribute("data-id")})
+            .then((response) => {
+                console.log(response.data);
+                e.target.parentElement.parentElement.remove();
+            })
+            .catch((err) => {
+                console.log("Iltimos qaytadan harakat qiling!");
+            }); 
+        } 
+    }
+
+    if(e.target.classList.contains("edit-me")) {
+        alert("Siz edit tugmasini bosdingiz");
+    }
+});
