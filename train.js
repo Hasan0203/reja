@@ -46,7 +46,7 @@ class Shop {
       const shop = new Shop(4, 5, 2);
       shop.qoldiq(); 
       shop.sotish('non', 4); 
-      shop.qabul('cola', 4); 
+      shop.qabul('cola', 4);
       shop.qoldiq(); 
       
       
