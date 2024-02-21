@@ -1,26 +1,23 @@
-// console.log("train area");
+console.log("train area");
 
-// //TASK - E
-// function reverse(str) {
-//     return str.split('').reverse().join('');
-// }
+//Task -F
 
-// console.log(reverse("hello"));
-
-
-//Tasl - D
-// function checkContent(str1, str2) {
-    
-//     const sortedStr1 = str1.split('').sort().join('');
-//     const sortedStr2 = str2.split('').sort().join('');
-
-//     return sortedStr1 === sortedStr2;
-// }
+function findDoublers(string) {
+    for (let i = 0; i < string.length; i++) {
+        for (let j = i + 1; j < string.length; j++) {
+            if (string[i] === string[j]) {
+                
+                return true;
+               
+            }
+        }
+    }
+    return false;
+}
 
 
-// console.log(checkContent("kevin", "venik"));
-
-
+console.log(findDoublers("hello"));  
+console.log(findDoublers("world"));
 
 
 
